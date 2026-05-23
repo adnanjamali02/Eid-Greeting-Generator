@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eid ul-Adha Greeting Generator 2026 | عيد الأضحى مبارك</title>
+  <meta name="description" content="Generate beautiful, personalized Eid ul-Adha 2026 greetings. Multiple styles, downloadable cards, WhatsApp sharing." />
+  <meta name="author" content="Adnan Jamali — github.com/adnanjamali02" />
+  <meta property="og:title" content="Eid ul-Adha Greeting Generator 2026" />
+  <meta property="og:description" content="Create & share beautiful personalized Eid greetings instantly." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- html2canvas for PNG download -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+
+  <style>
+    /* ─── CSS VARIABLES ─────────────────────────────────────────── */
+    :root {
+      --gold:      #C9A84C;
+      --gold-lt:   #E8C97A;
+      --gold-dk:   #8B6914;
+      --green:     #0D4F3C;
+      --green-lt:  #1A7A5C;
+      --green-dk:  #071F18;
+      --cream:     #F8F3E6;
+      --text:      #2C1A0E;
+      --radius:    16px;
+      --shadow:    0 8px 32px rgba(0,0,0,.45);
+    }
+
+    /* ─── RESET & BASE ──────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'EB Garamond', Georgia, serif;
+      background: var(--green-dk);
+      color: var(--cream);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ─── ANIMATED STARFIELD BACKGROUND ────────────────────────── */
+    .starfield {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      overflow: hidden;
+    }
+    .starfield::before,
+    .starfield::after {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        radial-gradient(1px 1px at 10% 15%, rgba(201,168,76,.8) 0%, transparent 100%),
+        radial-gradient(1px 1px at 25% 40%, rgba(201,168,76,.5) 0%, transparent 100%),
+        radial-gradient(2px 2px at 40%  8%, rgba(201,168,76,.6) 0%, transparent 100%),
+        radial-gradient(1px 1px at 60% 20%, rgba(201,168,76,.7) 0%, transparent 100%),
+        radial-gradient(1px 1px at 75% 55%, rgba(201,168,76,.4) 0%, transparent 100%),
+        radial-gradient(2px 2px at 85% 12%, rgba(201,168,76,.9) 0%, transparent 100%),
+        radial-gradient(1px 1px at 92% 35%, rgba(201,168,76,.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 15% 70%, rgba(201,168,76,.6) 0%, transparent 100%),
+        radial-gradient(1px 1px at 50% 80%, rgba(201,168,76,.4) 0%, transparent 100%),
+        radial-gradient(2px 2px at 70% 90%, rgba(201,168,76,.7) 0%, transparent 100%),
+        radial-gradient(1px 1px at 33% 60%, rgba(201,168,76,.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 80% 70%, rgba(201,168,76,.6) 0%, transparent 100%);
+      animation: twinkle 4s ease-in-out infinite alternate;
+    }
+    .starfield::after {
+      background-image:
+        radial-gradient(1px 1px at 5%  45%, rgba(255,255,255,.4) 0%, transparent 100%),
+        radial-gradient(1px 1px at 18% 90%, rgba(255,255,255,.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 55% 30%, rgba(255,255,255,.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 88%  5%, rgba(255,255,255,.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 45% 65%, rgba(255,255,255,.4) 0%, transparent 100%),
+        radial-gradient(1px 1px at 95% 80%, rgba(255,255,255,.3) 0%, transparent 100%);
+      animation-delay: 2s;
+    }
+    @keyframes twinkle {
+      0%   { opacity: .6; }
+      100% { opacity: 1; }
+    }
+
+    /* ─── GEOMETRIC PATTERN OVERLAY ────────────────────────────── */
+    .geo-overlay {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      opacity: .04;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpolygon points='40,4 52,28 78,28 58,45 66,70 40,55 14,70 22,45 2,28 28,28' fill='none' stroke='%23C9A84C' stroke-width='1'/%3E%3C/svg%3E");
+      background-size: 80px 80px;
+    }
+
+    /* ─── MAIN WRAPPER ──────────────────────────────────────────── */
+    .wrapper {
+      position: relative; z-index: 1;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+
+    /* ─── HEADER ────────────────────────────────────────────────── */
+    header {
+      text-align: center;
+      padding: 56px 20px 40px;
+    }
+
+    /* Crescent + star SVG animation */
+    .crescent-wrap {
+      display: inline-block;
+      animation: floatCrescent 5s ease-in-out infinite;
+      filter: drop-shadow(0 0 18px rgba(201,168,76,.7));
+    }
+    @keyframes floatCrescent {
+      0%, 100% { transform: translateY(0) rotate(-5deg); }
+      50%       { transform: translateY(-12px) rotate(5deg); }
+    }
+
+    .header-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--gold-dk), var(--gold));
+      color: var(--green-dk);
+      font-family: 'Amiri', serif;
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 5px 18px;
+      border-radius: 100px;
+      margin-bottom: 18px;
+      animation: pulseGlow 2.5s ease-in-out infinite;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(201,168,76,.4); }
+      50%       { box-shadow: 0 0 0 10px rgba(201,168,76,0); }
+    }
+
+    .header-title {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(1.8rem, 5vw, 3.6rem);
+      font-weight: 900;
+      line-height: 1.15;
+      background: linear-gradient(135deg, var(--gold-lt), var(--gold), var(--gold-lt));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 12px;
+      text-shadow: none;
+    }
+
+    .header-arabic {
+      font-family: 'Amiri', serif;
+      font-size: clamp(1.6rem, 4vw, 2.8rem);
+      color: var(--gold);
+      opacity: .85;
+      margin-bottom: 14px;
+      letter-spacing: .05em;
+    }
+
+    .header-sub {
+      font-size: 1.1rem;
+      color: rgba(248,243,230,.6);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ─── SECTION TITLES ────────────────────────────────────────── */
+    .section-title {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 1.15rem;
+      color: var(--gold);
+      letter-spacing: .08em;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-title::before,
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+
+    /* ─── FORM PANEL ────────────────────────────────────────────── */
+    .form-panel {
+      background: linear-gradient(145deg, rgba(13,79,60,.5), rgba(7,31,24,.7));
+      border: 1px solid rgba(201,168,76,.2);
+      border-radius: var(--radius);
+      padding: 36px;
+      backdrop-filter: blur(6px);
+      box-shadow: var(--shadow);
+      margin-bottom: 40px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 28px;
+    }
+    @media(max-width: 600px) { .form-grid { grid-template-columns: 1fr; } }
+
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .field-group label {
+      font-size: .85rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-family: 'Cinzel Decorative', serif;
+    }
+    .field-group input,
+    .field-group select {
+      background: rgba(7,31,24,.8);
+      border: 1px solid rgba(201,168,76,.3);
+      border-radius: 10px;
+      color: var(--cream);
+      font-family: 'EB Garamond', serif;
+      font-size: 1.05rem;
+      padding: 12px 16px;
+      outline: none;
+      transition: border-color .3s, box-shadow .3s;
+    }
+    .field-group input::placeholder { color: rgba(248,243,230,.3); }
+    .field-group input:focus,
+    .field-group select:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(201,168,76,.15);
+    }
+    .field-group select option { background: var(--green-dk); }
+
+    /* ─── STYLE CARDS GRID ──────────────────────────────────────── */
+    .styles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    .style-card {
+      background: rgba(7,31,24,.6);
+      border: 2px solid rgba(201,168,76,.15);
+      border-radius: 12px;
+      padding: 16px 14px;
+      cursor: pointer;
+      text-align: center;
+      transition: all .25s ease;
+      user-select: none;
+    }
+    .style-card:hover {
+      border-color: rgba(201,168,76,.5);
+      transform: translateY(-3px);
+      background: rgba(13,79,60,.4);
+    }
+    .style-card.active {
+      border-color: var(--gold);
+      background: rgba(201,168,76,.12);
+      box-shadow: 0 0 0 1px var(--gold), inset 0 0 20px rgba(201,168,76,.08);
+    }
+    .style-card .s-icon { font-size: 1.8rem; display: block; margin-bottom: 8px; }
+    .style-card .s-name {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: .7rem;
+      letter-spacing: .06em;
+      color: var(--gold);
+      line-height: 1.4;
+    }
+    .style-card .s-desc {
+      font-size: .78rem;
+      color: rgba(248,243,230,.5);
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
+    /* ─── LANGUAGE TOGGLES ──────────────────────────────────────── */
+    .toggle-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+    .toggle-btn {
+      background: rgba(7,31,24,.7);
+      border: 1px solid rgba(201,168,76,.25);
+      border-radius: 100px;
+      color: rgba(248,243,230,.7);
+      font-family: 'EB Garamond', serif;
+      font-size: .9rem;
+      padding: 7px 20px;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .toggle-btn:hover { border-color: var(--gold); color: var(--cream); }
+    .toggle-btn.active {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--green-dk);
+      font-weight: 600;
+    }
+
+    /* ─── GENERATE BUTTON ───────────────────────────────────────── */
+    .btn-generate {
+      width: 100%;
+      background: linear-gradient(135deg, var(--gold-dk) 0%, var(--gold) 50%, var(--gold-lt) 100%);
+      border: none;
+      border-radius: 12px;
+      color: var(--green-dk);
+      cursor: pointer;
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      padding: 16px 32px;
+      transition: all .3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-generate::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, transparent 40%, rgba(255,255,255,.25) 60%, transparent 80%);
+      transform: translateX(-100%);
+      transition: transform .6s ease;
+    }
+    .btn-generate:hover::before { transform: translateX(100%); }
+    .btn-generate:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(201,168,76,.4);
+    }
+    .btn-generate:active { transform: translateY(0); }
+
+    /* ─── CARD PREVIEW SECTION ──────────────────────────────────── */
+    #preview-section {
+      display: none;
+      animation: fadeInUp .6s ease forwards;
+    }
+    #preview-section.visible { display: block; }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ─── THE GREETING CARD ─────────────────────────────────────── */
+    .card-outer {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 28px;
+    }
+
+    #greeting-card {
+      width: 100%;
+      max-width: 680px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,.7), 0 0 0 1px rgba(201,168,76,.3);
+      position: relative;
+    }
+
+    .card-bg {
+      position: relative;
+      padding: 0;
+    }
+
+    /* Theme variants for the card */
+    .theme-emerald   { background: linear-gradient(160deg, #07291E 0%, #0D4F3C 50%, #071F18 100%); }
+    .theme-midnight  { background: linear-gradient(160deg, #080C24 0%, #1A2060 50%, #050818 100%); }
+    .theme-crimson   { background: linear-gradient(160deg, #1A0508 0%, #6B1020 50%, #100205 100%); }
+    .theme-desert    { background: linear-gradient(160deg, #2C1A08 0%, #5C3A1E 50%, #1A0E04 100%); }
+    .theme-celestial { background: linear-gradient(160deg, #050E1F 0%, #0A2040 50%, #040A14 100%); }
+    .theme-forest    { background: linear-gradient(160deg, #0A1A08 0%, #1E4020 50%, #060C05 100%); }
+    .theme-regal     { background: linear-gradient(160deg, #14061F 0%, #3A1060 50%, #0C0414 100%); }
+    .theme-ivory     { background: linear-gradient(160deg, #1A100A 0%, #3C2818 50%, #0E0806 100%); }
+
+    .card-geo-pattern {
+      position: absolute; inset: 0;
+      opacity: .07;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M30 2 L38 20 L58 20 L43 32 L50 50 L30 40 L10 50 L17 32 L2 20 L22 20Z' fill='none' stroke='%23C9A84C' stroke-width='1'/%3E%3C/svg%3E");
+      background-size: 60px 60px;
+    }
+
+    .card-inner {
+      position: relative;
+      z-index: 1;
+      padding: 40px 48px;
+      text-align: center;
+    }
+    @media(max-width: 600px) { .card-inner { padding: 28px 24px; } }
+
+    /* Ornate border inside the card */
+    .card-border {
+      border: 2px solid var(--gold);
+      border-radius: 14px;
+      padding: 32px 36px;
+      position: relative;
+    }
+    @media(max-width: 600px) { .card-border { padding: 24px 18px; } }
+
+    /* Corner ornaments */
+    .card-border::before,
+    .card-border::after {
+      content: '✦';
+      position: absolute;
+      color: var(--gold);
+      font-size: .9rem;
+      opacity: .7;
+    }
+    .card-border::before { top: -10px; left: 14px; background: inherit; padding: 0 6px; }
+    .card-border::after  { bottom: -10px; right: 14px; background: inherit; padding: 0 6px; }
+
+    .corner-tl, .corner-tr, .corner-bl, .corner-br {
+      position: absolute;
+      width: 28px; height: 28px;
+      border-color: var(--gold-lt);
+      opacity: .6;
+    }
+    .corner-tl { top: 6px; left: 6px;   border-top: 2px solid; border-left: 2px solid; border-radius: 4px 0 0 0; }
+    .corner-tr { top: 6px; right: 6px;  border-top: 2px solid; border-right: 2px solid; border-radius: 0 4px 0 0; }
+    .corner-bl { bottom: 6px; left: 6px;  border-bottom: 2px solid; border-left: 2px solid; border-radius: 0 0 0 4px; }
+    .corner-br { bottom: 6px; right: 6px; border-bottom: 2px solid; border-right: 2px solid; border-radius: 0 0 4px 0; }
+
+    .card-crescent {
+      font-size: 3rem;
+      line-height: 1;
+      margin-bottom: 8px;
+      filter: drop-shadow(0 0 10px rgba(201,168,76,.6));
+    }
+
+    .card-arabic {
+      font-family: 'Amiri', serif;
+      font-size: clamp(1.6rem, 5vw, 2.4rem);
+      color: var(--gold);
+      margin-bottom: 6px;
+      line-height: 1.5;
+      text-shadow: 0 0 20px rgba(201,168,76,.3);
+    }
+
+    .card-title {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(1rem, 3vw, 1.6rem);
+      color: var(--gold-lt);
+      letter-spacing: .1em;
+      margin-bottom: 20px;
+    }
+
+    .card-divider {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 16px 0;
+    }
+    .card-divider span { color: var(--gold); font-size: .7rem; opacity: .8; }
+    .card-divider::before,
+    .card-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      opacity: .5;
+    }
+
+    .card-to {
+      font-size: .8rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: rgba(201,168,76,.6);
+      margin-bottom: 4px;
+    }
+    .card-recipient {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(1.1rem, 3.5vw, 1.8rem);
+      color: var(--cream);
+      margin-bottom: 20px;
+    }
+
+    .card-message {
+      font-family: 'EB Garamond', serif;
+      font-size: clamp(.9rem, 2vw, 1.1rem);
+      line-height: 1.8;
+      color: rgba(248,243,230,.85);
+      white-space: pre-line;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .card-message-urdu {
+      font-family: 'Noto Nastaliq Urdu', 'Amiri', serif;
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      direction: rtl;
+      text-align: right;
+      line-height: 2.2;
+    }
+
+    .card-footer-deco {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      color: var(--gold);
+      opacity: .5;
+      font-size: .75rem;
+      margin-bottom: 12px;
+    }
+
+    .card-from {
+      font-size: .8rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: rgba(201,168,76,.6);
+      margin-bottom: 4px;
+    }
+    .card-sender {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(.95rem, 2.5vw, 1.3rem);
+      color: var(--gold);
+    }
+
+    /* ─── ACTION BUTTONS ────────────────────────────────────────── */
+    .action-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .action-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: 'EB Garamond', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 12px 24px;
+      transition: all .25s ease;
+      text-decoration: none;
+    }
+    .btn-download {
+      background: linear-gradient(135deg, var(--gold-dk), var(--gold));
+      color: var(--green-dk);
+    }
+    .btn-download:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(201,168,76,.4); }
+
+    .btn-copy {
+      background: rgba(13,79,60,.7);
+      border: 1px solid rgba(201,168,76,.4);
+      color: var(--cream);
+    }
+    .btn-copy:hover { background: rgba(13,79,60,1); border-color: var(--gold); transform: translateY(-2px); }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: #fff;
+    }
+    .btn-whatsapp:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37,211,102,.4); }
+
+    .btn-reset {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      color: rgba(248,243,230,.6);
+    }
+    .btn-reset:hover { background: rgba(255,255,255,.1); color: var(--cream); transform: translateY(-2px); }
+
+    /* ─── TOAST NOTIFICATION ────────────────────────────────────── */
+    .toast {
+      position: fixed;
+      bottom: 30px; left: 50%;
+      transform: translateX(-50%) translateY(80px);
+      background: var(--gold);
+      color: var(--green-dk);
+      font-family: 'Cinzel Decorative', serif;
+      font-size: .85rem;
+      letter-spacing: .06em;
+      padding: 12px 28px;
+      border-radius: 100px;
+      box-shadow: 0 8px 32px rgba(0,0,0,.4);
+      z-index: 9999;
+      transition: transform .4s ease, opacity .4s ease;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+
+    /* ─── FOOTER ────────────────────────────────────────────────── */
+    footer {
+      text-align: center;
+      padding: 32px 20px;
+      border-top: 1px solid rgba(201,168,76,.1);
+      color: rgba(248,243,230,.35);
+      font-size: .85rem;
+      line-height: 1.8;
+    }
+    footer a {
+      color: var(--gold);
+      text-decoration: none;
+      opacity: .7;
+      transition: opacity .2s;
+    }
+    footer a:hover { opacity: 1; }
+
+    /* ─── SCROLLBAR ─────────────────────────────────────────────── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--green-dk); }
+    ::-webkit-scrollbar-thumb { background: var(--gold-dk); border-radius: 3px; }
+  </style>
+</head>
+
+<body>
+
+  <div class="starfield"></div>
+  <div class="geo-overlay"></div>
+
+  <div class="wrapper">
+
+    <!-- ══ HEADER ═══════════════════════════════════════════════ -->
+    <header>
+      <div class="crescent-wrap">
+        <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Crescent moon -->
+          <path d="M60 45 A22 22 0 1 1 38 23 A16 16 0 1 0 60 45Z" fill="#C9A84C" opacity=".9"/>
+          <!-- Stars around -->
+          <polygon points="72,18 74,24 80,24 75,28 77,34 72,30 67,34 69,28 64,24 70,24" fill="#C9A84C" opacity=".8"/>
+          <polygon points="20,55 21,59 25,59 22,61 23,65 20,63 17,65 18,61 15,59 19,59" fill="#C9A84C" opacity=".6"/>
+          <polygon points="78,55 79,58 82,58 80,60 81,63 78,61 75,63 76,60 74,58 77,58" fill="#C9A84C" opacity=".5"/>
+        </svg>
+      </div>
+
+      <div class="header-badge">✦ Eid ul-Adha 2026 ✦</div>
+
+      <h1 class="header-title">Eid Greeting<br/>Generator</h1>
+      <div class="header-arabic">عيد الأضحى مبارك</div>
+      <p class="header-sub">
+        Create beautiful, personalised Eid ul-Adha greetings in seconds.
+        Download as image or share directly on WhatsApp.
+      </p>
+    </header>
+
+    <!-- ══ FORM PANEL ════════════════════════════════════════════ -->
+    <div class="form-panel">
+
+      <div class="section-title">Personalise Your Greeting</div>
+
+      <div class="form-grid">
+        <div class="field-group">
+          <label for="recipientInput">Recipient's Name</label>
+          <input type="text" id="recipientInput" placeholder="e.g. Ammi, Ali Bhai, Sarah…" maxlength="40" />
+        </div>
+        <div class="field-group">
+          <label for="senderInput">Your Name</label>
+          <input type="text" id="senderInput" placeholder="Your name…" maxlength="40" />
+        </div>
+      </div>
+
+      <!-- Language toggle -->
+      <div class="section-title" style="font-size:.9rem; margin-bottom:14px;">Greeting Language</div>
+      <div class="toggle-group" id="langToggle">
+        <button class="toggle-btn active" data-lang="en">🇬🇧 English</button>
+        <button class="toggle-btn" data-lang="ur">🇵🇰 اردو</button>
+        <button class="toggle-btn" data-lang="ar">🕌 عربي</button>
+      </div>
+
+      <!-- Style cards -->
+      <div class="section-title" style="font-size:.9rem; margin-bottom:14px;">Choose a Style</div>
+      <div class="styles-grid" id="stylesGrid"></div>
+
+      <!-- Card theme -->
+      <div class="section-title" style="font-size:.9rem; margin-bottom:14px;">Card Theme</div>
+      <div class="toggle-group" id="themeToggle">
+        <button class="toggle-btn active" data-theme="emerald">🟢 Emerald</button>
+        <button class="toggle-btn" data-theme="midnight">🔵 Midnight</button>
+        <button class="toggle-btn" data-theme="crimson">🔴 Crimson</button>
+        <button class="toggle-btn" data-theme="desert">🟤 Desert</button>
+        <button class="toggle-btn" data-theme="celestial">💙 Celestial</button>
+        <button class="toggle-btn" data-theme="regal">🟣 Regal</button>
+      </div>
+
+      <button class="btn-generate" id="generateBtn">
+        ✦ Generate My Eid Card ✦
+      </button>
+    </div>
+
+    <!-- ══ CARD PREVIEW ══════════════════════════════════════════ -->
+    <div id="preview-section">
+
+      <div class="section-title">Your Eid Greeting Card</div>
+
+      <div class="card-outer">
+        <div id="greeting-card">
+          <div class="card-bg theme-emerald" id="cardBg">
+            <div class="card-geo-pattern"></div>
+            <div class="card-inner">
+              <div class="card-border" id="cardBorder">
+                <div class="corner-tl"></div>
+                <div class="corner-tr"></div>
+                <div class="corner-bl"></div>
+                <div class="corner-br"></div>
+
+                <div class="card-crescent">🌙</div>
+                <div class="card-arabic" id="cardArabic">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ</div>
+                <div class="card-title" id="cardTitle">Eid ul-Adha Mubarak</div>
+
+                <div class="card-divider"><span>✦</span></div>
+
+                <div class="card-to" id="cardToLabel">To</div>
+                <div class="card-recipient" id="cardRecipient">Your Name Here</div>
+
+                <div class="card-message" id="cardMessage">
+Your personalised Eid greeting will appear here after you click Generate.
+                </div>
+
+                <div class="card-footer-deco">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+                <div class="card-from" id="cardFromLabel">With Duas From</div>
+                <div class="card-sender" id="cardSender">Your Name</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action buttons -->
+      <div class="action-buttons">
+        <button class="action-btn btn-download" id="downloadBtn">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Download PNG
+        </button>
+        <button class="action-btn btn-copy" id="copyBtn">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+          Copy Text
+        </button>
+        <button class="action-btn btn-whatsapp" id="whatsappBtn">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.528 5.853L0 24l6.335-1.507A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.782 9.782 0 01-4.988-1.36l-.358-.213-3.76.895.951-3.658-.234-.375A9.772 9.772 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Share on WhatsApp
+        </button>
+        <button class="action-btn btn-reset" id="resetBtn">
+          ↺ Start Over
+        </button>
+      </div>
+
+    </div><!-- /preview-section -->
+
+  </div><!-- /wrapper -->
+
+  <!-- ══ FOOTER ════════════════════════════════════════════════ -->
+  <footer>
+    <div>عيد الأضحى مبارك &nbsp;•&nbsp; Eid ul-Adha Mubarak 1447 AH / 2026</div>
+    <div style="margin-top:8px;">
+      Built with ❤️ by
+      <a href="https://github.com/adnanjamali02" target="_blank" rel="noopener">Adnan Jamali</a>
+      &nbsp;|&nbsp;
+      <a href="https://github.com/adnanjamali02/eid-greeting-generator" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <!-- ══ SCRIPT ════════════════════════════════════════════════ -->
+  <script>
+    /* ─── GREETING DATA ─────────────────────────────────────────── */
+    const STYLES = [
+      {
+        id: "formal",
+        icon: "📜",
+        name: "Formal",
+        desc: "Professional & dignified",
+        en: {
+          arabic: "عيد الأضحى المبارك",
+          title: "Eid ul-Adha Mubarak",
+          toLbl: "To Dear",
+          fromLbl: "With Warm Regards",
+          msg: (r, s) =>
+`On this auspicious occasion of Eid ul-Adha, I extend to you and your esteemed family my sincerest felicitations and heartfelt prayers.
+
+May Allah ﷻ accept your Qurbani and ibadah, shower His infinite blessings upon your household, and fill every moment of your life with peace, health, and boundless happiness.
+
+Eid Mubarak, Taqabbal Allahu Minna Wa Minkum.`
+        },
+        ur: {
+          arabic: "عیدالاضحیٰ مبارک",
+          title: "عید الاضحٰی مبارک ہو",
+          toLbl: "محترم",
+          fromLbl: "آپ کا",
+          msg: (r, s) =>
+`اس مبارک موقع پر آپ اور آپ کے اہل خانہ کو عید الاضحٰی کی دلی مبارک باد۔
+
+اللہ تعالیٰ آپ کی قربانی اور عبادت قبول فرمائے، آپ کے گھر کو خوشیوں سے بھر دے، اور آپ کو صحت و سلامتی عطا فرمائے۔
+
+تقبل اللہ منا ومنکم`
+        },
+        ar: {
+          arabic: "عيد الأضحى المبارك",
+          title: "تقبل الله منا ومنكم",
+          toLbl: "إلى الكريم",
+          fromLbl: "مع التحيات",
+          msg: (r, s) =>
+`بمناسبة عيد الأضحى المبارك، أتقدم إليكم وإلى عائلتكم الكريمة بأحر التهاني وأصدق الأماني.
+
+تقبل الله منا ومنكم صالح الأعمال، وجعل هذا العيد مباركاً عليكم وعلى جميع المسلمين.
+
+كل عام وأنتم بخير وعافية`
+        }
+      },
+      {
+        id: "warm",
+        icon: "❤️",
+        name: "Warm",
+        desc: "Personal & heartfelt",
+        en: {
+          arabic: "بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ",
+          title: "Eid Mubarak, My Dearest!",
+          toLbl: "To My Beloved",
+          fromLbl: "Forever Yours",
+          msg: (r, s) =>
+`Wishing you the most beautiful Eid ul-Adha! 🌙✨
+
+May this blessed day bring you immense joy, laughter, and peace. May every dua you make be answered, every worry lifted, and every dream you carry close to your heart come true this year.
+
+Sending you all my love and warmest duas. Enjoy every moment of this special day!`
+        },
+        ur: {
+          arabic: "اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ",
+          title: "عید مبارک پیارے!",
+          toLbl: "میرے پیارے",
+          fromLbl: "ہمیشہ آپ کا",
+          msg: (r, s) =>
+`عید الاضحٰی کی ڈھیر ساری مبارکباد! 🌙✨
+
+اللہ آپ کو ہر خوشی سے نوازے، آپ کی ہر دعا قبول کرے، اور آپ کی زندگی کو خوشیوں اور برکتوں سے بھر دے۔
+
+آپ کو اور آپ کے پورے خاندان کو عید بہت مبارک ہو!`
+        },
+        ar: {
+          arabic: "بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ",
+          title: "عيد مبارك يا حبيبي!",
+          toLbl: "إلى حبيبي",
+          fromLbl: "بكل محبة",
+          msg: (r, s) =>
+`أتمنى لك أجمل عيد الأضحى! 🌙✨
+
+جعل الله هذا اليوم المبارك مليئاً بالفرح والسعادة، وتقبل منك صالح الأعمال، وبلّغك ما تتمنى.
+
+كل عام وأنت بألف خير وسعادة!`
+        }
+      },
+      {
+        id: "family",
+        icon: "🏡",
+        name: "Family",
+        desc: "For your loved ones",
+        en: {
+          arabic: "عيد الأضحى المبارك",
+          title: "Eid Blessings to Our Family",
+          toLbl: "To My Dear Family",
+          fromLbl: "With All My Love",
+          msg: (r, s) =>
+`To the people who mean the world to me — Eid Mubarak! 🌙
+
+On this blessed occasion of Eid ul-Adha, I pray that Allah ﷻ keeps our family together in love, health, and happiness. May every sacrifice we make be accepted, every bond between us grow stronger, and every home in our family be filled with nur.
+
+Missing you all so much today. Eid Mubarak!`
+        },
+        ur: {
+          arabic: "عیدالاضحیٰ مبارک",
+          title: "ہمارے خاندان کو عید مبارک",
+          toLbl: "میرے عزیز گھر والوں کو",
+          fromLbl: "محبت کے ساتھ",
+          msg: (r, s) =>
+`آج کے اس مقدس دن پر اپنے سب سے پیاروں کو عید کی مبارک باد! 🌙
+
+اللہ ہمارے خاندان کو ہمیشہ خوشی، صحت اور آپس کی محبت میں جوڑے رکھے۔ ہر گھر میں برکت اور نور ہو، اور ہماری تمام قربانیاں قبول ہوں۔
+
+آج آپ سب کی بہت یاد آ رہی ہے۔ عید بہت مبارک!`
+        },
+        ar: {
+          arabic: "عيد الأضحى المبارك",
+          title: "عيد مبارك لعائلتنا الكريمة",
+          toLbl: "إلى أحبائي في العائلة",
+          fromLbl: "بكل الحب",
+          msg: (r, s) =>
+`إلى أغلى الناس على قلبي — عيد مبارك! 🌙
+
+أسأل الله أن يجمعنا دائماً بالحب والصحة والسعادة، وأن يحفظ أسرتنا ويبارك فيها، ويتقبل منا ومنكم صالح الأعمال.
+
+كل عام وأنتم بخير وعافية!`
+        }
+      },
+      {
+        id: "professional",
+        icon: "💼",
+        name: "Professional",
+        desc: "Business & colleagues",
+        en: {
+          arabic: "عيد الأضحى المبارك",
+          title: "Eid ul-Adha Greetings",
+          toLbl: "Dear",
+          fromLbl: "Best Regards",
+          msg: (r, s) =>
+`On behalf of myself and my team, I wish you and your family a joyous and blessed Eid ul-Adha.
+
+May this occasion of sacrifice and devotion bring renewed purpose and gratitude into your life and work. I hope you enjoy quality time with your loved ones and return refreshed.
+
+Taqabbal Allahu Minna Wa Minkum. Eid Mubarak!`
+        },
+        ur: {
+          arabic: "عیدالاضحیٰ مبارک",
+          title: "عید الاضحٰی مبارک",
+          toLbl: "جناب",
+          fromLbl: "سلام کے ساتھ",
+          msg: (r, s) =>
+`میری طرف سے آپ اور آپ کے اہل خانہ کو عید الاضحٰی کی خصوصی مبارکباد۔
+
+اللہ تعالیٰ آپ کی محنت اور لگن کو بارآور کرے، آپ کے کاروبار میں برکت دے، اور آپ کو ہر قدم پر کامیابی عطا فرمائے۔
+
+عید مبارک! تقبل اللہ منا ومنکم`
+        },
+        ar: {
+          arabic: "عيد الأضحى المبارك",
+          title: "تهاني عيد الأضحى",
+          toLbl: "حضرة",
+          fromLbl: "مع خالص التقدير",
+          msg: (r, s) =>
+`بمناسبة عيد الأضحى المبارك، يسعدني أن أتقدم إليكم بأخلص التهاني وأطيب التمنيات.
+
+أعاد الله عليكم هذه المناسبة المباركة بالخير والسعادة والنجاح، وجعلكم من عتقائه في هذا الموسم المبارك.
+
+تقبل الله منا ومنكم`
+        }
+      },
+      {
+        id: "poetic",
+        icon: "🌹",
+        name: "Poetic",
+        desc: "Lyrical & beautiful",
+        en: {
+          arabic: "سُبْحَانَ اللهِ وَبِحَمْدِهِ",
+          title: "A Blessed Eid ul-Adha",
+          toLbl: "For Beautiful",
+          fromLbl: "With Poetic Prayers",
+          msg: (r, s) =>
+`As the crescent moon graces the evening sky
+And the scent of Eid fills the air,
+I send you this prayer wrapped in gold —
+
+May every door you knock on open wide,
+May every tear you shed turn into a smile,
+May Ibrahim's faith guide your heart always,
+And may Allah's blessings never leave your side.
+
+Eid Mubarak, now and always. 🌙✨`
+        },
+        ur: {
+          arabic: "اَللّٰهُمَّ تَقَبَّلْ مِنَّا",
+          title: "عید الاضحٰی مبارک",
+          toLbl: "خوبصورت",
+          fromLbl: "دلی دعاؤں کے ساتھ",
+          msg: (r, s) =>
+`جب چاند نے آسمان کو سجایا
+اور عید کی خوشبو نے فضا کو مہکایا،
+میں نے ایک دعا تمہارے لیے بھیجی —
+
+ہر قدم پر اللہ کی رحمت ہو
+ہر دل میں خوشی کی لہر ہو
+قربانی کا یہ پیغام زندگی میں اترے
+اور تمہاری ہر دعا قبول ہو!
+
+عید مبارک 🌙✨`
+        },
+        ar: {
+          arabic: "اَللّٰهُمَّ تَقَبَّلْ مِنَّا",
+          title: "عيد الأضحى المبارك",
+          toLbl: "إلى الجميل",
+          fromLbl: "بدعوات شعرية",
+          msg: (r, s) =>
+`حين أضاء الهلال السماء الزرقاء
+وعبق الهواء بأنفاس العيد،
+بعثت إليك دعاء مغلفاً بالذهب —
+
+تقبل الله قربانك ودعاك
+وجعل كل يوم في عمرك عيداً
+وأدام عليك النعمة والرضا والسلام.
+
+عيد مبارك يا صديقي 🌙✨`
+        }
+      },
+      {
+        id: "brief",
+        icon: "⚡",
+        name: "Short & Sweet",
+        desc: "Quick & cheerful",
+        en: {
+          arabic: "عيد الأضحى المبارك",
+          title: "Eid Mubarak!",
+          toLbl: "Hey",
+          fromLbl: "From",
+          msg: (r, s) =>
+`Wishing you a day filled with smiles, good food, and beautiful moments with the people you love most! 🌙🌹
+
+Eid Mubarak! May Allah accept from us all. 🤲`
+        },
+        ur: {
+          arabic: "عیدالاضحیٰ مبارک",
+          title: "عید مبارک!",
+          toLbl: "پیارے",
+          fromLbl: "آپ کا",
+          msg: (r, s) =>
+`آپ کو اور آپ کے گھر والوں کو عید کی دل سے مبارکباد! 🌙🌹
+
+اللہ قبول فرمائے اور ہمیشہ خوش رکھے۔ عید مبارک! 🤲`
+        },
+        ar: {
+          arabic: "عيد الأضحى المبارك",
+          title: "عيد مبارك!",
+          toLbl: "عزيزي",
+          fromLbl: "من",
+          msg: (r, s) =>
+`تقبل الله منكم ومنا! أتمنى لكم يوماً مليئاً بالبهجة والفرح 🌙🌹
+
+عيد مبارك سعيد! 🤲`
+        }
+      },
+      {
+        id: "youth",
+        icon: "🚀",
+        name: "Youth / Gen-Z",
+        desc: "Modern & energetic",
+        en: {
+          arabic: "عيد الأضحى المبارك",
+          title: "Eid Vibes Only! ✨",
+          toLbl: "Yo,",
+          fromLbl: "Peace & Blessings From",
+          msg: (r, s) =>
+`Happy Eid ul-Adha bestie!! 🌙✨🎉
+
+May this Eid hit different — filled with Allah's blessings, good food, fam vibes, and zero stress. 🙌
+
+Wishing you all the good things this life has to offer. Stay blessed, stay grateful, keep shining!
+
+Eid Mubarak 🤍`
+        },
+        ur: {
+          arabic: "عیدالاضحیٰ مبارک",
+          title: "عید کا مزہ لو! ✨",
+          toLbl: "یار،",
+          fromLbl: "تمہارا دوست",
+          msg: (r, s) =>
+`عید مبارک یار!! 🌙✨🎉
+
+یہ عید بالکل الگ ہو — اللہ کی برکت، مزے دار کھانا، گھر والے اور zero tension! 🙌
+
+خوش رہو، شکرگزار رہو، چمکتے رہو!
+
+عید مبارک! 🤍`
+        },
+        ar: {
+          arabic: "عيد الأضحى المبارك",
+          title: "فايبز العيد فقط! ✨",
+          toLbl: "يا صاحبي،",
+          fromLbl: "صديقك",
+          msg: (r, s) =>
+`عيد سعيد يا صاحبي!! 🌙✨🎉
+
+أتمنى أن يكون عيدك هذا مختلفاً — مليئاً بالبركات والأكل اللذيذ والأسرة والفرح! 🙌
+
+ابقَ مباركاً وشاكراً ومتألقاً!
+
+عيد مبارك! 🤍`
+        }
+      },
+      {
+        id: "dua",
+        icon: "🤲",
+        name: "Dua & Prayer",
+        desc: "Spiritual & meaningful",
+        en: {
+          arabic: "تَقَبَّلَ اللهُ مِنَّا وَمِنْكُمْ",
+          title: "Special Duas for You",
+          toLbl: "In My Duas Always,",
+          fromLbl: "Your Brother/Sister in Islam",
+          msg: (r, s) =>
+`On this most sacred day of Eid ul-Adha, I remember you in my duas:
+
+🤲 May Allah grant you Jannah al-Firdaws.
+🤲 May He protect you and your family from all harm.
+🤲 May He ease every hardship you face.
+🤲 May He fill your heart with iman, peace, and gratitude.
+🤲 May He accept your Qurbani and all your good deeds.
+
+Taqabbal Allahu Minna Wa Minkum. Ameen. 🌙`
+        },
+        ur: {
+          arabic: "تَقَبَّلَ اللهُ مِنَّا وَمِنْكُمْ",
+          title: "آپ کے لیے خاص دعائیں",
+          toLbl: "میری دعاؤں میں ہمیشہ،",
+          fromLbl: "آپ کا دینی بھائی/بہن",
+          msg: (r, s) =>
+`اس مبارک عید الاضحٰی کے موقع پر آپ کو دعاؤں میں یاد کرتا/کرتی ہوں:
+
+🤲 اللہ آپ کو جنت الفردوس عطا فرمائے۔
+🤲 آپ اور آپ کے خاندان کو ہر تکلیف سے بچائے۔
+🤲 آپ کی ہر مشکل آسان کرے۔
+🤲 آپ کے دل کو ایمان اور سکون سے بھرے۔
+🤲 آپ کی قربانی اور نیک اعمال قبول فرمائے۔
+
+تقبل اللہ منا ومنکم۔ آمین 🌙`
+        },
+        ar: {
+          arabic: "تَقَبَّلَ اللهُ مِنَّا وَمِنْكُمْ",
+          title: "دعوات خاصة لك",
+          toLbl: "في دعائي دائماً،",
+          fromLbl: "أخوك/أختك في الإسلام",
+          msg: (r, s) =>
+`في هذا اليوم المبارك من عيد الأضحى، أذكرك في دعائي:
+
+🤲 جعلك الله من أهل الجنة الفردوس.
+🤲 حفظك وحفظ أسرتك من كل سوء.
+🤲 يسّر الله أمرك في كل شيء.
+🤲 ملأ الله قلبك إيماناً وطمأنينة.
+🤲 تقبل الله منك القربان وصالح الأعمال.
+
+تقبل الله منا ومنكم. آمين 🌙`
+        }
+      }
+    ];
+
+    /* ─── STATE ──────────────────────────────────────────────────── */
+    let selectedStyle  = "formal";
+    let selectedLang   = "en";
+    let selectedTheme  = "emerald";
+
+    /* ─── BUILD STYLE CARDS ─────────────────────────────────────── */
+    function buildStyleCards() {
+      const grid = document.getElementById("stylesGrid");
+      grid.innerHTML = "";
+      STYLES.forEach(s => {
+        const card = document.createElement("div");
+        card.className = "style-card" + (s.id === selectedStyle ? " active" : "");
+        card.dataset.id = s.id;
+        card.innerHTML = `
+          <span class="s-icon">${s.icon}</span>
+          <div class="s-name">${s.name}</div>
+          <div class="s-desc">${s.desc}</div>`;
+        card.addEventListener("click", () => {
+          selectedStyle = s.id;
+          document.querySelectorAll(".style-card").forEach(c => c.classList.remove("active"));
+          card.classList.add("active");
+        });
+        grid.appendChild(card);
+      });
+    }
+
+    /* ─── LANGUAGE TOGGLE ────────────────────────────────────────── */
+    document.querySelectorAll("#langToggle .toggle-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        selectedLang = btn.dataset.lang;
+        document.querySelectorAll("#langToggle .toggle-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+      });
+    });
+
+    /* ─── THEME TOGGLE ───────────────────────────────────────────── */
+    document.querySelectorAll("#themeToggle .toggle-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        selectedTheme = btn.dataset.theme;
+        document.querySelectorAll("#themeToggle .toggle-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        // Live preview update if card visible
+        const cardBg = document.getElementById("cardBg");
+        if (cardBg) {
+          cardBg.className = `card-bg theme-${selectedTheme}`;
+        }
+      });
+    });
+
+    /* ─── GENERATE CARD ──────────────────────────────────────────── */
+    document.getElementById("generateBtn").addEventListener("click", () => {
+      const recipient = document.getElementById("recipientInput").value.trim() || "Dear Friend";
+      const sender    = document.getElementById("senderInput").value.trim() || "Your Friend";
+
+      const styleData = STYLES.find(s => s.id === selectedStyle);
+      const langData  = styleData[selectedLang];
+
+      // Populate card
+      document.getElementById("cardBg").className      = `card-bg theme-${selectedTheme}`;
+      document.getElementById("cardArabic").textContent = langData.arabic;
+      document.getElementById("cardTitle").textContent  = langData.title;
+      document.getElementById("cardToLabel").textContent = langData.toLbl;
+      document.getElementById("cardRecipient").textContent = recipient;
+      document.getElementById("cardFromLabel").textContent  = langData.fromLbl;
+      document.getElementById("cardSender").textContent     = sender;
+
+      const msgEl = document.getElementById("cardMessage");
+      msgEl.textContent = langData.msg(recipient, sender);
+
+      // RTL for urdu/arabic messages
+      if (selectedLang === "ur" || selectedLang === "ar") {
+        msgEl.classList.add("card-message-urdu");
+        msgEl.style.direction = "rtl";
+      } else {
+        msgEl.classList.remove("card-message-urdu");
+        msgEl.style.direction = "ltr";
+      }
+
+      // Show preview
+      const ps = document.getElementById("preview-section");
+      ps.classList.add("visible");
+      // Re-trigger animation
+      ps.style.animation = "none";
+      ps.offsetHeight; // reflow
+      ps.style.animation = "";
+
+      ps.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
+    /* ─── DOWNLOAD PNG ───────────────────────────────────────────── */
+    document.getElementById("downloadBtn").addEventListener("click", async () => {
+      const card = document.getElementById("greeting-card");
+      try {
+        showToast("⏳ Generating image…");
+        const canvas = await html2canvas(card, {
+          useCORS: true,
+          scale: 2,
+          backgroundColor: null,
+          logging: false
+        });
+        const link = document.createElement("a");
+        link.download = `Eid-Mubarak-${Date.now()}.png`;
+        link.href = canvas.toDataURL("image/png");
+        link.click();
+        showToast("✦ Card downloaded!");
+      } catch (e) {
+        showToast("Download failed. Try screenshot.");
+      }
+    });
+
+    /* ─── COPY TEXT ──────────────────────────────────────────────── */
+    document.getElementById("copyBtn").addEventListener("click", () => {
+      const recipient = document.getElementById("cardRecipient").textContent;
+      const message   = document.getElementById("cardMessage").textContent;
+      const sender    = document.getElementById("cardSender").textContent;
+      const full = `Eid ul-Adha Mubarak!\n\nTo: ${recipient}\n\n${message}\n\nFrom: ${sender}`;
+      navigator.clipboard.writeText(full).then(() => {
+        showToast("✦ Copied to clipboard!");
+      }).catch(() => {
+        showToast("Copy failed – please select manually.");
+      });
+    });
+
+    /* ─── WHATSAPP SHARE ─────────────────────────────────────────── */
+    document.getElementById("whatsappBtn").addEventListener("click", () => {
+      const recipient = document.getElementById("cardRecipient").textContent;
+      const message   = document.getElementById("cardMessage").textContent;
+      const sender    = document.getElementById("cardSender").textContent;
+      const text = `🌙 *Eid ul-Adha Mubarak!* 🌙\n\n*To:* ${recipient}\n\n${message}\n\n*From:* ${sender}\n\n✦ _Generated at github.com/adnanjamali02/eid-greeting-generator_`;
+      const url  = `https://wa.me/?text=${encodeURIComponent(text)}`;
+      window.open(url, "_blank");
+    });
+
+    /* ─── RESET ──────────────────────────────────────────────────── */
+    document.getElementById("resetBtn").addEventListener("click", () => {
+      document.getElementById("preview-section").classList.remove("visible");
+      document.getElementById("recipientInput").value = "";
+      document.getElementById("senderInput").value    = "";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    /* ─── TOAST ──────────────────────────────────────────────────── */
+    let toastTimer = null;
+    function showToast(msg) {
+      const t = document.getElementById("toast");
+      t.textContent = msg;
+      t.classList.add("show");
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => t.classList.remove("show"), 2800);
+    }
+
+    /* ─── INIT ───────────────────────────────────────────────────── */
+    buildStyleCards();
+  </script>
+
+</body>
+</html>
