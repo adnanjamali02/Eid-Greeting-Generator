@@ -22,7 +22,7 @@
 
 <br/>
 
-**[🚀 Live Demo](https://adnanjamali02.github.io/eid-greeting-generator)**  &nbsp;|&nbsp;  **[⭐ Star this Repo](https://github.com/adnanjamali02/eid-greeting-generator)**  &nbsp;|&nbsp;  **[🐛 Report Bug](https://github.com/adnanjamali02/eid-greeting-generator/issues)**
+**[🚀 Live Demo](https://adnanjamali02.github.io/Eid-Greeting-Generator/)**  &nbsp;|&nbsp;  **[⭐ Star this Repo](https://github.com/adnanjamali02/eid-greeting-generator)**  &nbsp;|&nbsp;  **[🐛 Report Bug](https://github.com/adnanjamali02/eid-greeting-generator/issues)**
 
 </div>
 
